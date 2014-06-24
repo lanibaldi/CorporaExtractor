@@ -1,3 +1,3 @@
-cd C:\Projects\Rumenta\CorporaExtractor\CorporaExtractor\bin\Debug
+cd C:\Projects\Rumenta\CorporaExtractor\Output
 CorporaExtractor.exe -mongodb
 pause
