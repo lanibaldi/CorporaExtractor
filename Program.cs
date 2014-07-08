@@ -87,6 +87,9 @@ namespace CorporaExtractor
             string topics = ConfigurationManager.AppSettings["Topics"];
             foreach (string topic in topics.Split(new char[]{' '}))
                 status += string.Format(" #{0}", topic);
+            string mentions = ConfigurationManager.AppSettings["Mentions"];
+            foreach (string mention in mentions.Split(new char[] { ' ' }))
+                status += string.Format(" @{0}", mention);
 
             var di = new System.IO.DirectoryInfo(pathFolderName);
             var files = di.GetFiles();
